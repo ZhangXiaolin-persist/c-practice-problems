@@ -2,6 +2,19 @@
 
 11 道精选题，从基本运算符到 32 位开关面板，附带自动判题系统。
 
+## 快速开始
+
+```bash
+git clone https://github.com/ZhangXiaolin-persist/c-practice-problems.git
+cd c-practice-problems/01_位运算
+
+# 打开 BitOps.c，按题号顺序写代码
+# 写完运行:
+make
+```
+
+全部 55 个测试 PASS 就算通关。
+
 ## 题目总览
 
 | 幕 | 题号 | 内容 |
@@ -11,34 +24,18 @@
 | 幕三：多 bit 操作 | 7-9 | 批量置位、批量清零、先清后写 |
 | 幕四：工具与综合 | 10-11 | 统计 1 的个数、位操作实验台(观察) |
 
-## 开始做题
-
-```bash
-# 1. 把空白答题卡复制过来
-cp BitOps_blank.c BitOps.c
-
-# 2. 打开 BitOps.c，按题号顺序写代码
-
-# 3. 编译运行，看哪些测试通过了
-make
-
-# 4. 全部 PASS 后，可以对照参考答案
-cat reference/BitOps_Solution.c
-```
-
 ## 文件说明
 
 ```
-BitOps.h             题目说明书（只描述"做什么"，不提示"怎么做"）
-BitOps_blank.c       空白答题卡（你的起点）
-BitOps.c             你的答题卡（gitignore，不上传）
-test.c               自动判题系统
-Makefile             编译运行
-reference/           参考答案（做完后再看）
+BitOps.h       题目说明书（只描述做什么，不提示怎么做）
+BitOps.c       你的答题卡，在这里写代码
+test.c         自动判题系统
+Makefile       编译运行
+reference/     参考答案（做完后再看，每道题有详细解析）
 ```
 
-## 要求
+## 规矩
 
 - 按题号顺序做，每道题是下一道的积木
-- 先自己想，想不出来先跳过，回头再试
-- 全部 55 个测试 PASS 就算通关
+- 先自己想，卡住了先跳过，回头再试
+- 不要看参考答案，做完了再看
